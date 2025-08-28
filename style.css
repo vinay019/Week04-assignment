@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f6f1eb;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #9dbf9e;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2f5233;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.signup-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #9dbf9e;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #f0ede6;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #2f5233;
+  margin-bottom: 0.5rem;
+}
+
+.about {
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 4rem 4rem;
+    gap: 4rem;
+  }
+
+  .hero-content {
+    flex: 1;
+    padding-right: 1rem;
+    max-width: 600px;
+  }
+
+  .hero-img {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
